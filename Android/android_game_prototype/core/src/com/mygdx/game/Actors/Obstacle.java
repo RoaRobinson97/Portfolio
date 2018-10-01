@@ -1,10 +1,10 @@
 package com.mygdx.game.Actors;
 
 import com.badlogic.gdx.physics.box2d.Body;
-import com.mygdx.game.Box2d.ObstacleUserData;
+import com.mygdx.game.Box2D.ObstacleUserData;
 
 /**
- * Created by Robin on 21/11/2017.
+ * Created by Robin on 07/08/2017.
  */
 
 public class Obstacle extends GameActor {
@@ -18,4 +18,3 @@ public class Obstacle extends GameActor {
     }
 
 }
-

@@ -2,27 +2,21 @@ package com.mygdx.game.Screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.mygdx.game.MainClass;
+import com.badlogic.gdx.graphics.GL20;
+import com.mygdx.game.ToteMain;
 
-/**
- * Created by Robin on 21/11/2017.
- */
 
 public class OptionsScreen implements Screen {
-
-    private final MainClass game;
+    ToteMain game;
     Screen parent;
+    int a =0;
 
-    public OptionsScreen (MainClass game, Screen parent){
+
+    public OptionsScreen(ToteMain game, Screen parent) {
         this.game = game;
-        this.parent = parent;
-    }
+        this.parent=parent;
 
-    protected void handleInputs(){
-        if (Gdx.input.justTouched()){
-            game.setScreen(parent);}
     }
-
     @Override
     public void show() {
 
@@ -30,6 +24,15 @@ public class OptionsScreen implements Screen {
 
     @Override
     public void render(float delta) {
+            Gdx.gl.glClearColor(0, 1,0, 1);
+            Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+
+        if (Gdx.input.justTouched()){
+            a=a+1;
+            game.setScreen(parent);
+            System.out.println(a);
+        }
 
     }
 

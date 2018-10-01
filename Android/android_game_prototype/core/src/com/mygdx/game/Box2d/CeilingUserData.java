@@ -1,9 +1,9 @@
-package com.mygdx.game.Box2d;
+package com.mygdx.game.Box2D;
 
 import com.mygdx.game.Enums.UserDataType;
 
 /**
- * Created by Robin on 21/11/2017.
+ * Created by Robin on 07/08/2017.
  */
 
 public class CeilingUserData extends UserData {
@@ -12,4 +12,3 @@ public class CeilingUserData extends UserData {
         userDataType = UserDataType.CEILING;
     }
 }
-

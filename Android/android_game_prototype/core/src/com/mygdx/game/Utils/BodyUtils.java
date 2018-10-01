@@ -1,12 +1,8 @@
 package com.mygdx.game.Utils;
 
 import com.badlogic.gdx.physics.box2d.Body;
-import com.mygdx.game.Box2d.UserData;
+import com.mygdx.game.Box2D.UserData;
 import com.mygdx.game.Enums.UserDataType;
-
-/**
- * Created by Robin on 22/11/2017.
- */
 
 public class BodyUtils {
 

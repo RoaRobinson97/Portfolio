@@ -1,22 +1,20 @@
 package com.mygdx.game.Screens;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
 import com.mygdx.game.ToteMain;
 
 /**
  * Created by Robin on 05/08/2017.
  */
 
-public class GameOverScreen implements Screen {
+public class ContinueScreen implements Screen{
     ToteMain game;
-    Screen superparent;
-    int a =0;
+    Screen parent;
 
-    public GameOverScreen(ToteMain game, Screen superparent) {
-        this.game= game;
-        this.superparent = superparent;
+    public ContinueScreen(ToteMain game, Screen parent) {
+        this.game = game;
+        this.parent= parent;
+
     }
 
     @Override
@@ -26,15 +24,6 @@ public class GameOverScreen implements Screen {
 
     @Override
     public void render(float delta) {
-        Gdx.gl.glClearColor(1, 0,0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
-        if (Gdx.input.justTouched()){
-
-            System.out.println("Fracasado!");
-            game.setScreen(superparent);
-        }
-
 
     }
 

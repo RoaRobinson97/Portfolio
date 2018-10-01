@@ -1,11 +1,6 @@
-package com.mygdx.game.Box2d;
+package com.mygdx.game.Box2D;
 
-import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.Enums.UserDataType;
-
-/**
- * Created by Robin on 21/11/2017.
- */
 
 public abstract class UserData {
 
@@ -16,6 +11,4 @@ public abstract class UserData {
     public UserDataType getUserDataType(){
         return userDataType;
     }
-
-
 }
